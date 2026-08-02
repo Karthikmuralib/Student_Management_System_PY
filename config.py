@@ -3,13 +3,15 @@ Configuration module for Student Management System.
 Contains database settings and reusable constants.
 """
 
+import os
+
 # MySQL database configuration
 DB_CONFIG = {
-    "host": "localhost",
-    "user": "root",
-    "password": "root",
-    "database": "student_management",
-    "port": 3306,
+    "host": os.getenv("DB_HOST", "localhost"),
+    "user": os.getenv("DB_USER", "root"),
+    "password": os.getenv("DB_PASSWORD", ""),
+    "database": os.getenv("DB_NAME", "student_management"),
+    "port": int(os.getenv("DB_PORT", "3306")),
 }
 
 # GUI settings
