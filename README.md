@@ -42,9 +42,10 @@ Run the application from the project root:
 python main.py
 ```
 
-## Screenshots Placeholder
+##  Project Demo
+https://youtu.be/004qBD4A8C8
 
-Add screenshots here after running the application.
+
 
 ## Future Enhancements
 
